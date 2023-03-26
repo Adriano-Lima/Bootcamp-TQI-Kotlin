@@ -1,0 +1,61 @@
+	> Trabalhando em Equipes Ágeis 
+	P.D.C.A
+	Pilares
+		transparencia, inspeção, adaptação
+	Scrum
+		modelo do que deve ser feito	
+	ágil
+		facilidade de aprender e adaptar
+		ser agil não é necessariamente mais rápido
+		rápido e eficiente
+	
+	1 Indíviduos e Interações, mais que processos e ferramentas
+	2 Software em funcionamento, mais que documentaçao abrangente
+	3 Colaboraçao com o cliente, mais que regociaçbo de contratos
+	4 Responder a mudanças, mais que seguir um plano		
+
+	12 principios
+
+	Mundo é: VUCA (volatio, incerto,complexo,ambiguo)
+
+	processo
+		sempre tem o mesmo resultado
+		é repetitivo
+
+	projeto
+		tem inicio e fim definidos
+		fim exclusivo
+		esforço temporário
+
+	modelo tradicional
+		cascata
+		etapas bem definidas, em passo a passo
+		valor entregue no final
+
+	modelo ágil		
+		possui ciclos (sprints)
+		com entregaveis ao longo dos ciclos
+		iterativo e incremental
+		feedback
+		valor entregue continuamente
+
+	metodos ageis	
+		Framework Scrum
+			empirismo (base no que é observado), lean thiking (linha de pensamento, melhoria continua, evitar desperdicio)
+			pilares: TIA transparencia, inspeção, adaptação
+		Extreme Programming (XP)
+			ciclos de entregas rápidos, contínuos e incrementais
+			metodo agil criado para desenvolcimento de software
+			interação próxima com os clientes, testagem constante e ciclos de desenvolvimento curtos.
+			Planeja -> faz -> testa -> melhora -> planeja ...
+		Kanban
+			diminuicao do desperdicio
+			definir, gerenciar e melhorar serviços que entregam trabalho de conhecimento
+			Toyota
+			gestao de tarefas (quadro: to do, doing, done)
+		OKR
+			objetivos resultados chaves
+			objetivos estrategicos de uma empresa
+			objetivos com descricoes qualitativas
+			kR's -> metas (quantitativo)
+				SMART: Específicas, Mensuráveis, Atingíveis, Relevantes e Temporais
