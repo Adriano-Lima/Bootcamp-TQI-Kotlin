@@ -38,7 +38,7 @@ Bootcamp TQI Kotlin - Backend Developer </h1>
 
 ## #2 Docker Fundamentals
 
-  - [ ] Introdução e Laboratório Virtual
+  - [x] Introdução e Laboratório Virtual
 
   - [ ] Primeiros Passos com o Docker
 
@@ -99,7 +99,7 @@ Bootcamp TQI Kotlin - Backend Developer </h1>
 
   <div align="center">
 
-### _#BootcampTQIKotlin
+### _#BootcampTQIKotlin_
 
 ### _#ContratoDeCompromisso_
 

@@ -1,4 +1,4 @@
-	> Trabalhando em Equipes Ágeis 
+> Trabalhando em Equipes Ágeis 
 	P.D.C.A
 	Pilares
 		transparencia, inspeção, adaptação
@@ -9,7 +9,7 @@
 		ser agil não é necessariamente mais rápido
 		rápido e eficiente
 	
-	1 Indíviduos e Interações, mais que processos e ferramentas
+	1 Indíviduos e Interaçõs, mais que processos e ferramentas
 	2 Software em funcionamento, mais que documentaçao abrangente
 	3 Colaboraçao com o cliente, mais que regociaçbo de contratos
 	4 Responder a mudanças, mais que seguir um plano		
@@ -59,3 +59,46 @@
 			objetivos com descricoes qualitativas
 			kR's -> metas (quantitativo)
 				SMART: Específicas, Mensuráveis, Atingíveis, Relevantes e Temporais
+
+>> Docker Fundamentals
+
+	> Introdução ao Docker
+		Modelo cliente-servidor
+		Servidor
+			D.C (data center) ou Cloud
+			
+			A cloud computing é o acesso sob demanda, via internet, a recursos de computação — aplicativos, servidores (físicos e virtuais), armazenamento de dados, ferramentas de desenvolvimento, recursos de rede e muito mais — hospedados em um data center remoto gerenciado por um provedor de serviços (ex: aws, Azure)
+
+			Virtualizacao
+				utiliza software para criar uma camada de abstração sobre o hardware do computador, permitindo que os de hardware de um único computador sejam divididos em vários computadores virtuais.
+
+			Microserviços
+				pequenos serviços independentes que se comunicam usando APIS
+				APIs bem definidas
+				pertecem a pequenas equipes bem definidas
+				Quando quebramos uma aplicação monolítica em várias pequenas partes, conseguimos escalá-las de forma separada.
+
+			Container
+				são uma tecnologia usada para reunir um aplicativo e todos os seus arquivos necessários em um ambiente de tempo de execução. 
+				Uma caixa
+
+			Docker
+				Com o Docker, é possível lidar com os containers como se fossem máquinas virtuais modulares e extremamente leves.
+
+				Comandos essenciais 
+
+				https://medium.com/xp-inc/principais-comandos-docker-f9b02e6944cd
+
+				https://docs.docker.com/engine/reference/commandline/docker/
+
+				https://dev.to/soutoigor/docker-imagens-containers-e-seus-principais-comandos-23p6	
+
+	> Primeiros Passos com o Docker
+		https://hub.docker.com/
+		docker pull hello-world
+		docker run hello-world
+		docker ps (mostra container's em execucao)
+		docker ps -a (executados recentemente)
+
+
+		
