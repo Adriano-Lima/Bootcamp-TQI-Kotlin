@@ -95,10 +95,135 @@
 
 	> Primeiros Passos com o Docker
 		https://hub.docker.com/
-		docker pull hello-world
-		docker run hello-world
+		docker pull hello-world (pull -> baixar imagem)
+		docker run hello-world (run -> executar)
 		docker ps (mostra container's em execucao)
 		docker ps -a (executados recentemente)
+
+		docker run "image" sleep 10 (executa por 10 segundos)
+		docker stop "ID" ou "Name"
+
+		docker run -it ubuntu
+			usando o sistema operacional dentro do container
+			(para sair -> exit)
+		
+
+		docker --help (comandos antigos)
+
+		docker container --help (coamndos novo)
+
+		docker run -dti ubuntu (-d deixa o container executando em segundo plano)
+			docker exec -it "ID" /bin/bash
+				para executar funções no docker que está executando em segundo plano
+
+		
+		docker rm "ID" (pode-se pegar os tres primeiros digitos do ID)
+			da lista de container's que aparecem em "docker ps"
+
+
+		docker rmi (para excluir imagens)		
+			-> da lista de "docker images" 
+
+		Dando um nome para o container
+			docker run -dti	--name Ubuntu-A ubuntu
+			
+
+		Copiando Arquivos para o container
+			docker exec Ubuntu-A mkdir /destino
+			docker exec Ubuntu-A ls /
+			docker cp "nomeArquivo" Ubuntu-A:/destino	
+
+			Mandar varios arquivos
+				zip Meuzip.zip *.txt
+				docker cp Meuzip.zip Ubuntu-A:/destino
+
+		Copiando arquivos do container
+			docker cp Ubuntu-A:/destino/Meuzip.zip Zipcopia.zip
+
+		Tags
+			docker pull debian:9 (tag 9, baixar uma versao especifica)
+
+		Criando um container do MYSQL
+			docker pull mysql
+			
+			docker run -e MYSQL_ROOT_PASSWORD=Senha123 --name mysql-A -d -p 3306:3306 mysql
+				no windows nao precisa do -p 3306:3306
+
+
+			docker exec -it mysql-A bash
+
+				mysql -u root -p --protocol=tcp
+					digita a senha criada
+
+					CREATE DATABASE aula;
+					show databases;
+					use aula;
+					exit		
+			exit
+			
+			docker inspect mysql-A
+				mostra uma serie de informações inclusive o IP que esta sendo utilizado
+
+			
+		Parando e reiniciando um container
+			docker stop mysql-A
+			docker start mysql-A
+
+	
+	> Armazenamento de Dados com Docker
+		docker inspect "nomeContainer"
+		mkdir /data
+		mkdir /data/mysql-A
+
+		docker run -e MYSQL_ROOT_PASSWORD=123 --name mysql-A -d -p 3306:3306 --volume=/data/msql-A:var/lib/mysql mysql
+
+		Tipos de mount
+			docker volume ls (volumos criados no host)
+			docker volume create data-teste (criando um novo volume)
+				cd /var/lib/docker/volumes
+				ls
+				cd data-teste
+				cd _data
+				touch arquivo.txt
+
+
+			docker run -dti --name teste-A --mount type=volume,src=data-teste,dst=/data image
+
+			docker rm -f teste-A
+			docker volume rm data-teste
+
+		Exemplo: Apache Contêiner
+			docker pull httpd
+			mkdir data/apache-A
+			criar um index.html em apache-A
+
+			docker run --name apache-A -d -p 80:80 --volume=/data/apache-A:user/local/apache2/htdocs httpd
+
+		Exemplo: PHP - Apache
+			docker pull php:7.4-apache
+
+			mkdir data/php-A
+
+			docker run --name php-A -d -p 8080:80 --volume=/data/php-A:/var/www/html php:7.4-apache
+
+			cd php-A
+			criar o index.php
+
+
+				
+
+
+
+
+				
+
+
+
+
+
+
+
+
 
 
 		

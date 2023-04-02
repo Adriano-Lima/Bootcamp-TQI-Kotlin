@@ -40,9 +40,9 @@ Bootcamp TQI Kotlin - Backend Developer </h1>
 
   - [x] Introdução e Laboratório Virtual
 
-  - [ ] Primeiros Passos com o Docker
+  - [x] Primeiros Passos com o Docker
 
-  - [ ] Armazenamento de Dados com Docker
+  - [x] Armazenamento de Dados com Docker
 
   - [ ] Processamento, Logs e Rede com Docker
 
