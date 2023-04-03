@@ -227,3 +227,29 @@
 
 
 		
+
+	> Processamento, Logs e Rede com Docker
+		docker stats "container"
+			mostra uso de recursos
+
+		docker update containerJaCriado -m 128M --cpus 0.2
+
+		Na criação de um container
+			docker run --name ubuntu-A -dti -m 128M --cpus 0.2 ubuntu
+
+		docker info
+		docker log container
+		docker top container (processos)
+
+		REdes
+			docker network ls
+
+			docker network create minha-rede
+			
+			docker run -dti --name ubuntu-A --network minha-rede ubuntu
+
+			
+
+
+
+
