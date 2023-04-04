@@ -46,7 +46,7 @@ Bootcamp TQI Kotlin - Backend Developer </h1>
 
   - [x] Processamento, Logs e Rede com Docker
 
-  - [ ] Definição e Criação de um Docker File
+  - [x] Definição e Criação de um Docker File
 
   - [ ] Docker Compose
 

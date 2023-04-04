@@ -209,24 +209,7 @@
 			cd php-A
 			criar o index.php
 
-
-				
-
-
-
-
-				
-
-
-
-
-
-
-
-
-
-
-		
+	
 
 	> Processamento, Logs e Rede com Docker
 		docker stats "container"
@@ -248,13 +231,66 @@
 			
 			docker run -dti --name ubuntu-A --network minha-rede ubuntu
 
-			
-
-
-
-
-
 
 
 	> Definição e Criação de um Docker File
+		nano app.py
+		nano dockerfile
+			FROM ubuntu
+			RUN apt update && apt install -y python3 && apt clean
+			COPY app.py /opt/app.py
+			CMD python3 /opt/app.py
+		docker build . -t python-ubuntu
+		docker run -ti --name meu-app ubuntu-python
+
+		Criando imagens personalizadas a partir de imagens de liguagens de programação
+			docker pull pyhton 
+			nano app.py
+				nome = input("Qual seu nome")
+				print(nome)
+			nano dockerfile
+				FROM python
+				WORKDIR /usr/src/app
+				COPY app.py /usr/src/app
+				CMD ["python","./app.py"]
+			
+			docker image build -t app-python .
+			
+			docker run -ti --name app1 app-python
+
+		Upload de imagem
+			docker login
+			docker build . -t usuario/my-image
+			docker push usuario/my-image:1.0
+
+			docker logout
+
+		Criando um servidor de imagens
+			Criar uma maquina Virtual Ubuntu-Server
+			
+			docker run -d -p 5000:5000 --restart=always --name registry registry:2 	
+
+			docker image tag IMAGE_ID ipServidor:5000/my-image:1.0
+
+			Ver as imagens que estao no servidor
+				curl ipServidor:5000/v2/_catalog
+			Subir
+				docker push ipServidor:5000/my-image:1.0
+
+				se der erro
+					Avisar que a conexao com o servidor e segura
+						nano /etc/docker/daemon.json		
+							{"insecure-registries":["ipServidor:5000"]}
+						systemctl restart docker
+			Baixar
+				docker pull ipServidor:5000/imageName
+
+
+
+
+
+
+
+
+	> Docker Compose
 		
