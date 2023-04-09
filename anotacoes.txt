@@ -208,7 +208,6 @@
 
 			cd php-A
 			criar o index.php
-
 	
 
 	> Processamento, Logs e Rede com Docker
@@ -287,10 +286,20 @@
 
 
 
-
-
-
-
-
 	> Docker Compose
+		Unir dois ou mais containeres
+		YAML
+
+		install docker-compose
+
+		docker-compose --version
+
+		criar arquivo: docker-compose.yml
+			dentro da pasta onde foi criado o arquivo
+			docker-compose up -d
+				-d para executar em segundo plano
+			docker-compose down (stop e rm)
+				
+
+
 		
