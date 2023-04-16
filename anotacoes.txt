@@ -303,3 +303,71 @@
 
 
 		
+
+
+>> Dominando a Linguagem de Programação Kotlin
+	interoperável com Java e outras linguagens		
+	criada pela JetBrains
+	roda na JVM do JAVA
+
+	Rodar online:
+		https://play.kotlinlang.org/
+
+	pouco verbosa
+
+	Funções
+		fun nomeDaFuncao(nomeParametro:tipo):TipoRetorno{
+			... faz algo
+		}
+			se nao vai retornar nada -> :Unit, ou nao colocar nada
+
+		fun printMessageWithPrefix(message: String, prefix: String = "Info"){
+		println("[$prefix) $message")
+		}
+
+		fun multiply(x: Int, y: Int) = x * y
+
+		Parametros vararg
+			receber uma quantidade indefinida de objetos de um dado tippo
+
+			fun printAll(vararg messages:String){
+				for(m in messages) println(m)
+			}
+
+			printAll("teste","oi","Ola Mundo")
+
+			se uma funcao recebe um vararg e vai passar esse parametro para outra que tbm epera reber um  vararg, colocar * na frente do nome do parametro passado
+
+	Variaveis
+		var s:String
+			multável
+			posso reatribuir valores a s
+		val b:Int = 1
+			imultável
+			o valor de b nao poder ser mudado
+			nao precisa necessariamente atribuir valor na declaracao
+	
+	Null  Safety
+		var a:String
+			nao recebe null
+
+		var b:String?		
+			aceita receber null
+
+		Funcao que recebe uma String ou null e retorna o tamanho da mesma:
+			fun strLength(str: String?): Int {
+				return str?.length ?: 0
+			}	
+
+	Classes
+		class Contact(val id:Int, var email:String)
+
+		fun Main(){
+			val contact = Contact(1,"teste@gmail.com")
+			println(contact.id)
+			contact.email = "jane@gmail.com"
+		}							
+
+	Generics
+			
+		

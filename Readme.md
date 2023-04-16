@@ -83,8 +83,8 @@ Bootcamp TQI Kotlin - Backend Developer </h1>
 
 ## #5 Dominando a Linguagem de Programação Kotlin
 
-   - [ ] Conhecendo o Kotlin e Sua Documentação Oficial
-   - [ ] Introdução Prática à Linguagem de Programação Kotlin
+   - [x] Conhecendo o Kotlin e Sua Documentação Oficial
+   - [x] Introdução Prática à Linguagem de Programação Kotlin
    - [ ] Estruturas de Controle de Fluxo e Coleções em Kotlin
    - [ ] Orientação a Objetos e Tipos de Classes na Prática com Kotlin
    - [ ] O Poder das Funções em Kotlin
