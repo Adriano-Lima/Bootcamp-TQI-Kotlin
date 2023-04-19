@@ -56,16 +56,16 @@ Bootcamp TQI Kotlin - Backend Developer </h1>
 
 ## #3 Dominando a Linguagem de Programação Java    ****
 
-  - [ ] Ambiente de Desenvolvimento Java
-  - [ ] Aprendendo a Sintaxe Java
-  - [ ] Lógica Condicional e Controle de Fluxos em Java
-  - [ ] Estruturas de Repetição e Arrays em Java
-  - [ ] Entendendo Métodos Java
-  - [ ] Programação Orientada a Objetos com Java
-  - [ ] Trabalhando com Collections Java
-  - [ ] Debuging Java
-  - [ ] Tratamento de Exceções em Java
-  - [ ] Abstraindo um Bootcamp Usando Orientação a Objetos em Java
+  - [x] Ambiente de Desenvolvimento Java
+  - [x] Aprendendo a Sintaxe Java
+  - [x] Lógica Condicional e Controle de Fluxos em Java
+  - [x] Estruturas de Repetição e Arrays em Java
+  - [x] Entendendo Métodos Java
+  - [x] Programação Orientada a Objetos com Java
+  - [x] Trabalhando com Collections Java
+  - [x] Debuging Java
+  - [x] Tratamento de Exceções em Java
+  - [x] Abstraindo um Bootcamp Usando Orientação a Objetos em Java
 
 
   <br/>  
@@ -85,7 +85,7 @@ Bootcamp TQI Kotlin - Backend Developer </h1>
 
    - [x] Conhecendo o Kotlin e Sua Documentação Oficial
    - [x] Introdução Prática à Linguagem de Programação Kotlin
-   - [ ] Estruturas de Controle de Fluxo e Coleções em Kotlin
+   - [x] Estruturas de Controle de Fluxo e Coleções em Kotlin
    - [ ] Orientação a Objetos e Tipos de Classes na Prática com Kotlin
    - [ ] O Poder das Funções em Kotlin
    - [ ] Tratamento de Exceções em Kotlin

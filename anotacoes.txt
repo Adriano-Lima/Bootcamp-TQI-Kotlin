@@ -320,6 +320,7 @@
 			... faz algo
 		}
 			se nao vai retornar nada -> :Unit, ou nao colocar nada
+			no parametro, obj:Any, pode receber qualquer tipo, qualquer objeto
 
 		fun printMessageWithPrefix(message: String, prefix: String = "Info"){
 		println("[$prefix) $message")
@@ -346,6 +347,7 @@
 			imultável
 			o valor de b nao poder ser mudado
 			nao precisa necessariamente atribuir valor na declaracao
+
 	
 	Null  Safety
 		var a:String
@@ -360,6 +362,8 @@
 			}	
 
 	Classes
+		classe nomeClasse(atributos)
+		
 		class Contact(val id:Int, var email:String)
 
 		fun Main(){
@@ -369,5 +373,81 @@
 		}							
 
 	Generics
-			
+
+	> Estruturas de Controle de Fluxo e Coleções em kotlin
+		When
+			equivalente ao switch no Java
+			when(obj){
+			1-> println("Um")
+			"" -> println("Vazio")
+			else  -> println("Nehum dos casos")
+			}
+
+			When Expression
+				val result = when(obj){}
+		Loops
+			for
+				val cakes = listOf("a","b","c")
+				for (cake on cakes){ ... }
+
+			while e do while
+				while(condicao){}
+				
+				do{}while(condicao)
+
+			Loops: Iterators
+
+		Ranges (intervalos)
+			0..3 (de 0 a 3, incluindo o 3)
+			0 until 3 (de 0 a 2)
+			2..8 step 2 
+			3 downTo 0
+
+			'a'..'d'
+			'z' downTo 's' step 2
+
+		== e ===
+			== estrutura
+			=== memoria (referencial)
+
+		expressao condicional
+			if(a>b) a else b
+
+		Coleções
+			List
+				segue ordem de insercao
+				listOf() -> lista imutável
+					depois da criacao nao posso alterar
+				mutableListOf() -> lista mutável
+					semelhante ao ArrayList no Java
+					posso add, remover
+				
+			Set
+				nao permite elementos duplicados
+				nao segue ordem de insercao
+
+
+			Funcoes
+				val numbers = listOf(1,-2,3,-4,5,-6)
+				val positivos = numbers.filter{ x -> x > 0}
+				val neg = numbers.filter{ it < 0}
+
+				val dobro = numbers.map { x -> x*2}
+
+				numbers.any {it < 0}
+
+				
+
+
+
+
+
+
+
+
+
+
+
+
+
 		
