@@ -451,3 +451,49 @@
 
 
 		
+
+
+	> Orientação a Objetos e Tipos de Classes na Prática com Kotlin
+		abstração 
+			concentrar-se nos aspectos essenciais de um dominio
+
+		encapsulamento
+			esconder implementações dos objetos, criando interfaces de uso mais concisas e fáceis de usar
+
+		herança
+			permite que as classes compartilhem suas caracteristicas e comportamentos
+			(reuso)
+
+		polimorfismo
+			Capacidade de um objeto poder ser referenciado de várias formas, ou seja, é capacidade de tratar objetos criados a partir das classes específicas como objetos de uma classe genérica.	
+
+		Herança Simples
+			na classe que pai tem que dizer que é "open"
+			open class nomeClasse{}
+			assim como na funcao que pode ser sobrescrita
+			open fun nomeFuncao(){}
+
+		Data Classes
+			classes para armazenar dados
+			consumir e guardar dados de uma API por exemplo
+			ja traz implementado funcoes como equals, toString, hashCode
+
+		Enum Classes
+			representam um estado
+			valores finitos distintos
+
+			enum class State{
+				IDLE, RUNNING, FINISHED
+			} 	
+
+		Sealed Classes
+			so pode ser extendida dentro do pacote onde foi criada
+
+				
+
+				
+
+						
+
+	> O Poder das Funções em Kotlin
+								

@@ -72,7 +72,7 @@ fun main(){
     accountsReport()
     updatePointsCredit(1)
     updatePointsCredit(1)
-    updatePointsCredit(5)  
+    updatePointsCredit(5)
     accountsReport()
 
 
