@@ -95,11 +95,11 @@ Bootcamp TQI Kotlin - Backend Developer </h1>
 
 ## #6 Refinando Sua Técnica Com Desafios de Código em Kotli
 
-  - [ ] Desafio com Kotlin: Média Final do Aluno
-  - [ ] Desafio com Kotlin: Data por Extenso
-  - [ ] Desafio com Kotlin: Numeral Romano
-  - [ ] Desafio com Kotlin: Cálculo Salarial
-  - [ ] Desafio com Kotlin: Taxa de Crescimento
+  - [x] Desafio com Kotlin: Média Final do Aluno
+  - [x] Desafio com Kotlin: Data por Extenso
+  - [x] Desafio com Kotlin: Numeral Romano
+  - [x] Desafio com Kotlin: Cálculo Salarial
+  - [x] Desafio com Kotlin: Taxa de Crescimento
 
   <br/>    
 
