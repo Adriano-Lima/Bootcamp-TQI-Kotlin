@@ -87,9 +87,9 @@ Bootcamp TQI Kotlin - Backend Developer </h1>
    - [x] Introdução Prática à Linguagem de Programação Kotlin
    - [x] Estruturas de Controle de Fluxo e Coleções em Kotlin
    - [x] Orientação a Objetos e Tipos de Classes na Prática com Kotlin
-   - [ ] O Poder das Funções em Kotlin
-   - [ ] Tratamento de Exceções em Kotlin
-   - [ ] Abstraindo Formações da DIO Usando Orientação a Objetos com Kotlin
+   - [x] O Poder das Funções em Kotlin
+   - [x] Tratamento de Exceções em Kotlin
+   - [x] Abstraindo Formações da DIO Usando Orientação a Objetos com Kotlin  **
 
   <br/>    
 
