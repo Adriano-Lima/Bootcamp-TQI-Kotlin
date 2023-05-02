@@ -15,23 +15,14 @@ Bootcamp TQI Kotlin - Backend Developer </h1>
 ## #1 Princípios de Agilidade e Desenvolvimento de Software
 
   - [x] Conheça as Oportunidades da DIO
-
-  - [x] Seja Protagonista Neste Bootcamp
-  
+  - [x] Seja Protagonista Neste Bootcamp  
   - [x] Boas-vindas ao Bootcamp TQI Kotlin - Backend Developer
-
   - [x] Introdução ao Desenvolvimento Moderno de Software
-
-  - [x] Trabalhando em Equipes Ágeis
- 
-  - [x] Introdução à Programação e Pensamento Computacional
-  
-  - [x]	Como Entregar seu Desafio de Projeto
-	
+  - [x] Trabalhando em Equipes Ágeis 
+  - [x] Introdução à Programação e Pensamento Computacional  
+  - [x]	Como Entregar seu Desafio de Projeto	
   - [x] Criando seu Primeiro Repositório no GitHub Para Compartilhar Seu Progresso
-
   - [ ] TQI Kotlin Backend Developer I Aula Inaugural
-
 
   <br/>
 
@@ -39,17 +30,11 @@ Bootcamp TQI Kotlin - Backend Developer </h1>
 ## #2 Docker Fundamentals
 
   - [x] Introdução e Laboratório Virtual
-
   - [x] Primeiros Passos com o Docker
-
   - [x] Armazenamento de Dados com Docker
-
   - [x] Processamento, Logs e Rede com Docker
-
   - [x] Definição e Criação de um Docker File
-
   - [x] Docker Compose
-
   - [x] Criando um Container de uma Aplicação WEB
 
   <br/>
@@ -73,11 +58,11 @@ Bootcamp TQI Kotlin - Backend Developer </h1>
 
 ## #4 Refinando Sua Técnica Com Desafios de Código em Java
 
-  - [ ] Desafio comJava: Tráfego de Trânsito
-  - [ ] Desafio com Java: Compras na Livraria
-  - [ ] Desafio com Java: Idade Planetária
-  - [ ] Desafio com Java: Gerenciamento de Loja Geek
-  - [ ] Desafio com Java: Mudança para Irlanda
+  - [x] Desafio comJava: Tráfego de Trânsito
+  - [x] Desafio com Java: Compras na Livraria
+  - [x] Desafio com Java: Idade Planetária
+  - [x] Desafio com Java: Gerenciamento de Loja Geek
+  - [x] Desafio com Java: Mudança para Irlanda
 
   <br/>  
 
