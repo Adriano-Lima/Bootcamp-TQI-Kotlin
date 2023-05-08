@@ -91,7 +91,7 @@ Bootcamp TQI Kotlin - Backend Developer </h1>
 
 ## #7 Primeiros Passos com SQL
 
-  - [ ] MySQL - Trabalhando com suas Primeiras Tabelas
+  - [x] MySQL - Trabalhando com suas Primeiras Tabelas
   - [ ] MySQL - Explorando Relacionamentos com MySQL Workbench
   - [ ] MySQL - Consultas com Join
  

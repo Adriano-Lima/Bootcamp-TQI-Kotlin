@@ -549,4 +549,35 @@
 
 >> Primeiros Passos com SQL
 
->Trabalhando com suas Primeiras Tabelas
+	>Trabalhando com suas Primeiras Tabelas
+		tabelas sao compostas por entidades, atributos e chaves
+		as chaves permitem o relacionamento entre os dados
+		relacional
+			dados organizados de forma estruturada
+		consulta e manipulação de dados de forma simplificada
+
+			CREATE TABLE pessoas(
+			id INT NOT NULL PRIMARY KEY AUTOINCREMENT,
+			nome VARCHAR(30) NOT NULL,
+			nascimento DATE
+			);
+
+			INSERT INTO pessoas (nome,nascimento) VALUES ('Adriano','1987-08-04');
+
+
+			select * from pessoas;
+			select nome from pessoas;
+			select nome from pessoas ORDER BY nome;
+			select nome from pessoas ORDER BY nome  DESC;
+
+			UPDATE pessoas SET nome='Adriano Lima' where id=1;
+
+			DELETE from pessoas where id=1;
+
+			select COUNT(id), nome from pessoa GROUP BY nome;
+
+			
+
+
+
+			
