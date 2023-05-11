@@ -576,6 +576,29 @@
 
 			select COUNT(id), nome from pessoa GROUP BY nome;
 
+	> Explorando Relacionamentos com MySQL Workbench	
+		show databases;
+		para selecionar um banco
+			use nomeBanco;
+		
+		show tables;	
+		
+		criando uma nova tabela no banco
+			create table cursos(id_curso INT NOT NULL PRIMARY KEY AUTO_INCREMENT, nome VARCHAR(10));
+			
+			inserindo dados na tabela			
+				insert into cursos(nome) values('MYSQL');
+
+			inserindo uma nova coluna na tabela
+				alter table cursos add carga_horaria INT(2) AFTER nome;
+
+		deletar uma tabela
+			drop table nomeTabela;
+
+		Modelo Relacional
+			create table playlist()	
+
+
 			
 
 
