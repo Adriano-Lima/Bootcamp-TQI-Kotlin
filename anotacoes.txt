@@ -577,6 +577,7 @@
 			select COUNT(id), nome from pessoa GROUP BY nome;
 
 	> Explorando Relacionamentos com MySQL Workbench	
+		Operações básicas no command line
 		show databases;
 		para selecionar um banco
 			use nomeBanco;
@@ -595,8 +596,13 @@
 		deletar uma tabela
 			drop table nomeTabela;
 
+		deletar um banco	
+			drop database noemeBanco;	
+
 		Modelo Relacional
 			create table playlist()	
+
+			
 
 
 			
