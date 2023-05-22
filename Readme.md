@@ -92,8 +92,8 @@ Bootcamp TQI Kotlin - Backend Developer </h1>
 ## #7 Primeiros Passos com SQL
 
   - [x] MySQL - Trabalhando com suas Primeiras Tabelas
-  - [ ] MySQL - Explorando Relacionamentos com MySQL Workbench
-  - [ ] MySQL - Consultas com Join
+  - [x] MySQL - Explorando Relacionamentos com MySQL Workbench
+  - [x] MySQL - Consultas com Join
  
   <br/>    
 
@@ -101,12 +101,12 @@ Bootcamp TQI Kotlin - Backend Developer </h1>
 ## #8 Explorando o Spring Framework comJava e Kotlin	
 
 
-  - [ ] Principais Protocolos de Comunicação da Internet
+  - [x] Principais Protocolos de Comunicação da Internet
   - [ ] Projetos Java com Gradle
   - [ ] Testes Unitários Com JUnit
   - [ ] Contextualizando o Desenvolvimento Web com Spring Boot 3 e Kotlin
   - [ ] Criando uma Api Rest com Kotlin e Persistência de Dados
-  - [ ] Explorando Padrões de Projetos na Prática com Java
+  - [x] Explorando Padrões de Projetos na Prática com Java
   - [ ] Documentando e Testando sua API Rest com Kotlin
   - [ ] Avalie este Bootcamp
 

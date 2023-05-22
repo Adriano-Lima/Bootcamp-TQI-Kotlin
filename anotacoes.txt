@@ -599,8 +599,42 @@
 		deletar um banco	
 			drop database noemeBanco;	
 
-		Modelo Relacional
-			create table playlist()	
+
+		Tabelas	
+		video(id_video, author, title, likes, dislikes)
+		playlist(id_playlist, name)
+		seo(id_seo,category)
+		author(id_author, name, born)	
+		videos_playlist(id_vp, fk_video, fk_playlist)
+
+		Mostrando o titulo do video e sua respectiva categoria
+			select video.title,seo.category from video JOIN seo on video.fk_seo = seo.id;
+
+		Mostrando o titulo do video, nome do autor, e a categoria
+			select video.title, author.name, seo.category from video JOIN seo on video.fk_seo = seo.id JOIN author on video.fk_author = author.id;
+
+		
+		select * from playlist JOIN videos_playlist on playlist.id = videos_playlist.fk_playlist JOIN video ON video.id = videos_playlist.fk_video;
+
+		select playlist.name as 'Nome_Playlist',A.name  as 'Autor_Playlist',video.title as 'Titulo_Video', author.name as 'Autor_Video', seo.category as 'Categoria' 
+		from playlist JOIN videos_playlist on playlist.id = videos_playlist.fk_playlist 
+		JOIN author  AS A on playlist.fk_author = A.id
+		JOIN video ON video.id = videos_playlist.fk_video 
+		JOIN author on video.fk_author = author.id
+		JOIN seo ON video.fk_seo = seo.id;
+
+
+
+		> Consultas com Join
+			select * videos_canais AS vc JOIN videos AS v ON vc.fk_video = v.id_video JOIN canais AS c ON vc.fk_canal = c.id_canal;
+
+			select v.nome_video,v.author_video,c.nome_canal videos_canais AS vc JOIN videos AS v ON vc.fk_video = v.id_video JOIN canais AS c ON vc.fk_canal = c.id_canal;
+
+			INNER JOIN ou apenas JOIN
+				retorna na consulta apenas relações que existam nas duas tabelas
+
+			Quando quero mostrar todos os dados de uma tabela mesmo que ele não se relacione com os da outra, deve-se usar o OUTER JOIN	
+				select * videos_canais AS vc RIGHT OUTER JOIN videos AS v ON vc.fk_video = v.id_video; 
 
 			
 
@@ -608,5 +642,75 @@
 			
 
 
+			
+
+
 
 			
+
+
+>> Explorando o Spring Framework comJava e Kotlin	
+	> Projetos Java com Gradle
+		Sistema de automação de compilação e de builds
+		ele pega todos os arquivos do projeto e cria um JAR
+		faz a build do projeto
+		similares: Maven e Ant
+
+		rodar os unit tests
+		colocar o JAR ou APK em uma pasta diferente
+		gestao de dependencias
+		gerar documentacao
+		tudo em um unico comando
+
+		utiliza a linguagem Groovy
+		baseado em tasks
+		forte sistema de plugins
+		Open Source
+
+		./gradlew (instalando em um projeto especifico)
+
+		./gradlew tasks
+
+		./gradlew run (compilar)
+
+		gradle tasks
+		gradle run
+
+		BuildScript
+			O arquivo build.gradle é chamado de BuildScript
+			escrito uma DSL que pode ser Groovy ou Kotlin
+			Concentra as tarefas que serão possíveis serem executadas com o gradle
+		
+		gradle run -q (elemina os logs do gradle)
+
+		PLugins
+			adicionam novas tasks
+			funcionam como bibliotecas
+			Plugin "application" -> tasks run e build
+
+		Criar um projeto
+			gradle init
+				Aplication
+				Java
+				no
+				Groovy
+				Junit
+				1
+				enter
+				enter
+
+		gradle test (testar os testes)
+
+		Multi Modulos ou Multi Projetos
+			• É possível adicionar SubMódulos (ou subprojetos)dentro da sua aplicação Java
+			organização do código em projetos grandes
+			possibilidade de dividir o time dem subprojetos
+			facilita adição de novos modulos ao projeto
+
+			
+
+
+
+
+
+
