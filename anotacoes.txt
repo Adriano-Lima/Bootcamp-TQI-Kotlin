@@ -637,16 +637,7 @@
 				select * videos_canais AS vc RIGHT OUTER JOIN videos AS v ON vc.fk_video = v.id_video; 
 
 			
-
-
-			
-
-
-			
-
-
-
-			
+		
 
 
 >> Explorando o Spring Framework comJava e Kotlin	
@@ -702,15 +693,58 @@
 		gradle test (testar os testes)
 
 		Multi Modulos ou Multi Projetos
-			• É possível adicionar SubMódulos (ou subprojetos)dentro da sua aplicação Java
+			É possível adicionar SubMódulos (ou subprojetos)dentro da sua aplicação Java
+			
 			organização do código em projetos grandes
+			
 			possibilidade de dividir o time dem subprojetos
 			facilita adição de novos modulos ao projeto
 
+		
+		Criando tasks
+			o gradle permite criar as proprias tasks
 			
+			é possivel criar tasks que utilizam outras ja existentes
+
+
+		Tasks dependentes
+
+		dependsOn -> só executa se a indicada na dependencia for executada primeiro
+
+		finalizedBy -> quanto terminar a task executa a indicada no parametro
+
+		mustRunAfter -> a task em questao pode ser executada sozinha, mas se exucutada junto com a indicada so pode ser execuatada depois dela
+
+		
+		Task Types
+			ajuda na criacao de tasks complexas
+
+			task copyBuild (type: Copy) {
+		    	from 'build'
+		    	into '../Release'
+			}
+
+			task zipReleaseToTestTeam (type: Zip) {
+			    baseName = 'ExecutableToTestTeam'
+			    destinationDir = file('../ExecutableToTestTeam')
+			    from 'build/distributions'
+			}	
+
+		
 
 
 
 
 
+
+
+
+
+
+
+
+
+
+>> Testes Unitários Com JUnit
+	
 

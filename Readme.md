@@ -102,7 +102,7 @@ Bootcamp TQI Kotlin - Backend Developer </h1>
 
 
   - [x] Principais Protocolos de Comunicação da Internet
-  - [ ] Projetos Java com Gradle
+  - [x] Projetos Java com Gradle
   - [ ] Testes Unitários Com JUnit
   - [ ] Contextualizando o Desenvolvimento Web com Spring Boot 3 e Kotlin
   - [ ] Criando uma Api Rest com Kotlin e Persistência de Dados
