@@ -720,31 +720,86 @@
 			ajuda na criacao de tasks complexas
 
 			task copyBuild (type: Copy) {
-		    	from 'build'
-		    	into '../Release'
+					from 'build'
+					into '../Release'
 			}
 
 			task zipReleaseToTestTeam (type: Zip) {
-			    baseName = 'ExecutableToTestTeam'
-			    destinationDir = file('../ExecutableToTestTeam')
-			    from 'build/distributions'
+					baseName = 'ExecutableToTestTeam'
+					destinationDir = file('../ExecutableToTestTeam')
+					from 'build/distributions'
 			}	
 
 		
 
 
-
-
-
-
-
-
-
-
-
-
-
-
 >> Testes Unitários Com JUnit
-	
+	Também chamado de testes de unidade
+	Testar a menor unidade de código possível
+	Unidade: função, método, classes
+	Testar uma aplicação na sua menor parte
+	Geralmente escrito em tempo de desenvolvimento
 
+	MVN Repository (site)
+		Junit Jupiter Engine (buscar por)
+
+		Se usando o gradle
+			em build.gradle
+				- add a dependencia
+				- 
+				test{
+					useJUnitPlatform()
+				}
+
+		Se no Maven
+			add dependencia
+	@Test
+	void metodo(){
+		Assertions.assertEquals(resultadoExperado,entrada);
+	}						
+
+	- After e Before
+		@BeforeAll (executa uma vez)
+		@BeforeEach (executa uma vez a cada test)
+		
+
+		@AfterAll
+		@AfterEach
+
+
+	- Assumptions e Testes condicionais
+		so executa o teste se atenter determinadas condicoes
+
+	- Ordenando testes		
+
+	Em cima do nome da classe de teste
+	@TestMethodOrder(methodOrderer.OrderAnnotation.class)	
+		em cima do @Test
+			@Order(1)	
+
+	@TestMethodOrder(methodOrderer.MethodName.class) 
+		ordena pelo nome do teste
+
+	@TestMethodOrder(methodOrderer.Radom.class)						ordem aleatoria
+
+	@TestMethodOrder(methodOrderer.DisplayName.class)
+		em cima do @Test	
+			@DisplayName("")
+
+	- Boas práticas
+		facilidade de leitura
+		escrever o teste o  mais cedo possivel, o mais proximo do codigo de execucao
+		Buscar padronizacao - nomenclatura
+		Testes precisam ser deterministicos
+
+		https://junit.org/junit5
+
+				
+
+													
+
+			
+
+
+
+					
