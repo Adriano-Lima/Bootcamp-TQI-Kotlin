@@ -105,7 +105,7 @@ Bootcamp TQI Kotlin - Backend Developer </h1>
   - [x] Projetos Java com Gradle
   - [x] Testes Unitários Com JUnit
   - [x] Contextualizando o Desenvolvimento Web com Spring Boot 3 e Kotlin
-  - [ ] Criando uma Api Rest com Kotlin e Persistência de Dados
+  - [x] Criando uma Api Rest com Kotlin e Persistência de Dados
   - [x] Explorando Padrões de Projetos na Prática com Java
   - [ ] Documentando e Testando sua API Rest com Kotlin
   - [ ] Avalie este Bootcamp
