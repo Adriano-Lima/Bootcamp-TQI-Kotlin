@@ -7,7 +7,7 @@ import org.springframework.stereotype.Service
 import java.util.*
 
 @Service
-class CreditService(val creditRepository: CreditRepository, val custumerService: CustumerService) : ICreditService {
+class CreditService(val creditRepository: CreditRepository, val custumerService: CustomerService) : ICreditService {
     override fun save(credit: Credit): Credit {
         credit.apply {
             customer = credit.customer?.id?.let { id -> custumerService.findById(id) }

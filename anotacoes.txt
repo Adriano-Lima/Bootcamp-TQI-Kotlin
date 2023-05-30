@@ -808,4 +808,17 @@
 >> Contextualizando o Desenvolvimento Web com Spring Boot 3 e Kotlin
 	Flyway -> ferramenta de versionamento de banco de dados
 
-	http://localhost:8080/h2-console/								
+	http://localhost:8080/h2-console/
+
+
+>> Adicionando Segurança a uma API REST com Spring Security
+	Spring Security é apenas um grupo de filtros de servlet que ajudam você a adicionar autenticação e autorização ao seu aplicativo da web.
+	
+	A autenticação refere ao processo de verificação da identidade de um usuário,
+	
+	Autorização se refere ao processo de determinar se um usuário tem permissão adequada
+
+	add dependencia spring security
+	
+	
+

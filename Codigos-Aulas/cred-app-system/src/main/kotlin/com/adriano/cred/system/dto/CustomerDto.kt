@@ -20,7 +20,7 @@ data class CustomerDto(
 ) {
     fun toEntity(): Customer = Customer(
         firstName = this.firstName,
-        lastname = this.lastName,
+        lastName = this.lastName,
         cpf = this.cpf,
         income = this.income,
         email = this.email,

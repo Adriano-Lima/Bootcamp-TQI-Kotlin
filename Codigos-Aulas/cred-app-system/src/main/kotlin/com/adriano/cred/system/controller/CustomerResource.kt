@@ -4,7 +4,7 @@ import com.adriano.cred.system.dto.CustomerDto
 import com.adriano.cred.system.dto.CustomerUpdateDto
 import com.adriano.cred.system.dto.CustomerView
 import com.adriano.cred.system.model.Customer
-import com.adriano.cred.system.service.impl.CustumerService
+import com.adriano.cred.system.service.impl.CustomerService
 import jakarta.validation.Valid
 import org.springframework.http.HttpStatus
 import org.springframework.http.ResponseEntity
@@ -20,7 +20,7 @@ import org.springframework.web.bind.annotation.RestController
 
 @RestController
 @RequestMapping("/api/customers")
-class CustomerResource(private val customerService: CustumerService) {
+class CustomerResource(private val customerService: CustomerService) {
 
     @PostMapping
     fun saveCustomer(@RequestBody @Valid customerDto: CustomerDto): ResponseEntity<String> {

@@ -13,7 +13,7 @@ data class CustomerUpdateDto(
 ) {
     fun toEntity(customer:Customer):Customer{
         customer.firstName = this.firstName
-        customer.lastname = this.lastName
+        customer.lastName = this.lastName
         customer.income = this.income
         customer.address.street = this.street
         return customer

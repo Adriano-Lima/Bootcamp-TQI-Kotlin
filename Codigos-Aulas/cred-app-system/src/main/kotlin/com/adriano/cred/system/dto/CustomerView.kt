@@ -14,7 +14,7 @@ data class CustomerView(
 ) {
     constructor(customer: Customer):this (
         firstname = customer.firstName,
-        lastName = customer.lastname,
+        lastName = customer.lastName,
         cpf = customer.cpf,
         income = customer.income,
         email = customer.cpf,
