@@ -22,7 +22,7 @@ Bootcamp TQI Kotlin - Backend Developer </h1>
   - [x] Introdução à Programação e Pensamento Computacional  
   - [x]	Como Entregar seu Desafio de Projeto	
   - [x] Criando seu Primeiro Repositório no GitHub Para Compartilhar Seu Progresso
-  - [ ] TQI Kotlin Backend Developer I Aula Inaugural
+  - [x] TQI Kotlin Backend Developer I Aula Inaugural
 
   <br/>
 
@@ -109,7 +109,7 @@ Bootcamp TQI Kotlin - Backend Developer </h1>
   - [x] Adicionando Segurança a uma API REST com Spring Security 
   - [x] Explorando Padrões de Projetos na Prática com Java
   - [x] Documentando e Testando sua API Rest com Kotlin
-  - [ ] Avalie este Bootcamp
+  - [x] Avalie este Bootcamp
 
   <br/>    
 
